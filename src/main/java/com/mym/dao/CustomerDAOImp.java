@@ -1,6 +1,8 @@
 package com.mym.dao;
 
 import com.mym.bean.Customer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -8,8 +10,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+@Component
 public class CustomerDAOImp implements CustomerDAO {
 
+    @Autowired
     private DataSource dataSource;
 
     public void setDataSource(DataSource dataSource) {

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="springHelloWorld" class="com.mym.imp.SpringHelloWorld"/>
-    <bean id="strustHelloWorld" class="com.mym.imp.StrustHelloWorld"/>
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--<bean id="springHelloWorld" class="com.mym.imp.SpringHelloWorld"/>-->
+    <!--<bean id="strustHelloWorld" class="com.mym.imp.StrustHelloWorld"/>-->
 
-    <bean id="helloWorldService" class="com.mym.services.HelloWorldService">
-        <property name="helloWorld" ref="strustHelloWorld"/>
-    </bean>
+    <!--<bean id="helloWorldService" class="com.mym.services.HelloWorldService">-->
+        <!--<property name="helloWorld" ref="strustHelloWorld"/>-->
+    <!--</bean>-->
+    <import resource="Spring-Datasource.xml"/>
+    <context:annotation-config/>
+    <context:component-scan base-package="com.mym"/>
 </beans>

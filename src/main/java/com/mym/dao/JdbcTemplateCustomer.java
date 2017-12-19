@@ -1,17 +1,15 @@
 package com.mym.dao;
 
 import com.mym.bean.Customer;
-import org.springframework.dao.DataAccessException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.PreparedStatementSetter;
-import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
+@Component
 public class JdbcTemplateCustomer implements CustomerDAO {
+    @Autowired
     private DataSource dataSource;
     private JdbcTemplate jdbcTemplate;
 

@@ -2,10 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="customerDAOImp" class="com.mym.dao.CustomerDAOImp">
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
-    <bean id="jdbcTemplateCustomer" class="com.mym.dao.JdbcTemplateCustomer">
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
+    <!--<bean id="customerDAOImp" class="com.mym.dao.CustomerDAOImp"/>-->
+
+
+    <!--<bean id="jdbcTemplateCustomer" class="com.mym.dao.JdbcTemplateCustomer"/>-->
+
+
 </beans>

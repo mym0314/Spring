@@ -6,9 +6,14 @@
         <fileset id="fileset" name="Beans" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/beans.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring-beans/Spring-Datasource.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-beans/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-el/el-beans.xml</file>
         </fileset>
         <fileset id="fileset2" name="Spring Module" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/Spring-Module.xml</file>
+        </fileset>
+        <fileset id="fileset3" name="Spring Aop" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/spring-aop.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -34,5 +39,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:4.1.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.1.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.38" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.8.10" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.8.10" level="project" />
   </component>
 </module>
